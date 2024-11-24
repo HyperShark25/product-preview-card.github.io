@@ -1,0 +1,222 @@
+:root {
+    font-size: 14px;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    width: auto;
+    height: auto;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 4%;
+}
+
+.image {
+    border-top-left-radius: 4%;
+}
+
+.perfume {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: Fraunces, sans-serif;
+}
+
+.summary {
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat, sans-serif;
+}
+
+span:first-child {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    
+}
+
+
+span:last-child {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: 0;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    transition: 250ms;
+}
+
+button:active {
+    background-color: hsl(159, 74%, 12%);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 376px) {
+    
+    .container {
+        width: 340px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+    
+    
+    .image {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        border-top-right-radius: 4%;
+        background-image: url("images/image-product-mobile.jpg");
+    }
+    
+    .description {
+        margin: 20px;
+    }
+    
+    .perfume {
+        letter-spacing: 0.3rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    h1 {
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+    
+    .summary {
+        font-size: 1rem;
+        line-height: 22px;
+        word-spacing: 2px;
+        font-weight: 500;
+    }
+    
+    div {
+        width: 220px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    span:first-child {
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+    
+    
+    button {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (min-width: 750px) and (max-width: 1600px) {
+    .container {
+        width: 700px;
+        height: 560px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        border-radius: 4%;
+        justify-self: center;
+    }
+    
+
+    .image {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/image-product-desktop.jpg");
+        background-size: cover;
+        border-bottom-left-radius: 4%;
+    }
+
+    .description {
+        width: 85%;
+        height: 100%;
+        padding: 20px 30px;
+    }
+
+    .perfume {
+        letter-spacing: 0.3rem;
+        font-weight: 500;
+    }
+    
+    h1 {
+        font-size: 2.9rem;
+        font-weight: 700;
+    }
+
+    .summary {
+        font-size: 1.1rem;
+        line-height: 25px;
+        font-weight: 500;
+    }
+
+    div {
+        width: 220px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    span:first-child {
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+
+    span:last-child {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    
+    button {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 250ms;
+    }
+
+    button:hover {
+        background-color: hsl(159, 74%, 12%);
+    }
+}
+
+
+.attribution {
+    width: 350px;
+    height: auto;
+    font-size: 1rem;
+    text-align: center;
+    justify-self: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
